@@ -1,0 +1,8 @@
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+
+  mat-slider {
+    width: 300px;
+  }
+  
