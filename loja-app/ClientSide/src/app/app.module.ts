@@ -15,6 +15,7 @@ import { HeaderComponent } from './components/view/header/header.component';
 import { BodyComponent } from './components/view/body/body.component'; 
 import { FooterComponent } from './components/view/footer/footer.component'; 
 import { SideNavComponent } from './components/view/side-nav/side-nav.component'; 
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -34,7 +35,11 @@ import { SideNavComponent } from './components/view/side-nav/side-nav.component'
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatButtonModule 
+    MatButtonModule,
+
+    RouterModule.forRoot([
+     
+    ]),
     
   ],
   providers: [],
