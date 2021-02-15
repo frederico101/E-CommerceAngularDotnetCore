@@ -3,13 +3,16 @@
     bottom: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    align-items: baseline;
     color: #3f51b5;
+   
 }
 .footer span{
     font-weight: 300;
     font-size: 1rem;
 }
 .material-icons {
-
+  
     color: green;
 }

@@ -1,9 +1,15 @@
   <mat-toolbar class="header mat-elevation-z4 header"> 
   
-      <span class="logo"><img src="./assets/logo.jpg" alt="logo"></span>
+    <div class="logo">
+          <a class="logo__link" routerLink=""> 
+
+            <img src="./assets/logo.jpg" alt="logo">
+            </a>
+          </div>
+
       <span class="links">
-     
-      <a routerLink=""> 
+
+        <a routerLink=""> 
         <i> 
           <mat-icon class="icon">home</mat-icon> 
         </i>
@@ -17,12 +23,20 @@
 
         </a>
                 
-         <a>
+         <a routerLink="contato">
            <i>
              <mat-icon class="icon">contact_page</mat-icon>
           </i> 
            Contatos
           </a>
+
+          <a routerLink="produtos">
+            <i>
+              <mat-icon class="icon">storemarket</mat-icon>
+           </i> 
+           Produtos
+ 
+         </a>
         
         </span>
       

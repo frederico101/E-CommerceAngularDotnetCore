@@ -1,0 +1,25 @@
+.body{
+  position: relative;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 50px;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.mat-card-image{
+  
+  box-sizing: content-box;
+  object-fit:cover;
+  width: 25rem;
+  height: 14rem;
+  
+}
+ .mat-card-actions{
+  color:aquamarine;  
+  display: inline;
+  }
+  

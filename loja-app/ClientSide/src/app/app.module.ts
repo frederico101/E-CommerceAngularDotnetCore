@@ -8,6 +8,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list'; 
+import {MatCardModule} from '@angular/material/card'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,7 +41,7 @@ import { ProdutoComponent } from './components/model/produto/produto.component';
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
-
+    MatCardModule,
     RouterModule.forRoot([
      {
        path:"produtos", 
