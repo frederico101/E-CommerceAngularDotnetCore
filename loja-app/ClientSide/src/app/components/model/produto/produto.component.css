@@ -1,7 +1,12 @@
 .body{
+
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .grid-container{
+  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;

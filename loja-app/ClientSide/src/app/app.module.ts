@@ -7,8 +7,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatGridListModule} from '@angular/material/grid-list'; 
 import {MatCardModule} from '@angular/material/card'; 
+import {MatGridListModule} from '@angular/material/grid-list'; 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +19,8 @@ import { FooterComponent } from './components/view/footer/footer.component';
 import { SideNavComponent } from './components/view/side-nav/side-nav.component'; 
 import { RouterModule } from '@angular/router';
 import { ProdutoComponent } from './components/model/produto/produto.component';
+import { ProdutoDetalheComponent } from './components/model/produto-detalhe/produto-detalhe.component';
+import { ContatoComponent } from './components/view/components/contato/contato.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { ProdutoComponent } from './components/model/produto/produto.component';
     SideNavComponent,
     FooterComponent,
     BodyComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    ProdutoDetalheComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +46,7 @@ import { ProdutoComponent } from './components/model/produto/produto.component';
     MatButtonModule,
     MatGridListModule,
     MatCardModule,
+    
     RouterModule.forRoot([
      {
        path:"produtos", 
@@ -50,7 +55,15 @@ import { ProdutoComponent } from './components/model/produto/produto.component';
      {
       path:"",
       component: BodyComponent
-     }
+     },
+     {
+      path:"contato",
+      component: ContatoComponent
+     },
+     {
+       path:"produto-detalhe",
+       component: ProdutoDetalheComponent
+      }
     ]),
     
   ],

@@ -1,23 +1,28 @@
-.header{
-  position: fixed;  
-  top: 0;
-  z-index: 1;
+
+ *{ box-sizing: border-box;}
+ .header{
   display: flex;
   justify-content:flex-end;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+   max-width: 100%; 
+   max-height: 80%;
   background-color: #3f51b5;
   }
-   .logo{
-    margin-right: 590px;
-    margin-top: 2px;
-  }
+  
+  .header_logo{
 
+    width: 100%;
+  }
+  img{
+
+    width: 100%;
+  }
   a{
     margin-left: 12px;
     text-decoration: none;
     color: white;
-  }
+    width: 100%;
 
-  img{
-    width: 193px;
-    height: 71px;
   }
