@@ -20,7 +20,7 @@ import { SideNavComponent } from './components/view/side-nav/side-nav.component'
 import { RouterModule } from '@angular/router';
 import { ProdutoComponent } from './components/model/produto/produto.component';
 import { ProdutoDetalheComponent } from './components/model/produto-detalhe/produto-detalhe.component';
-import { ContatoComponent } from './components/view/components/contato/contato.component';
+import { MenuComponent } from './components/view/menu/menu.component';
 
 
 @NgModule({
@@ -32,7 +32,7 @@ import { ContatoComponent } from './components/view/components/contato/contato.c
     BodyComponent,
     ProdutoComponent,
     ProdutoDetalheComponent,
-    ContatoComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -57,13 +57,14 @@ import { ContatoComponent } from './components/view/components/contato/contato.c
       component: BodyComponent
      },
      {
-      path:"contato",
-      component: ContatoComponent
-     },
-     {
        path:"produto-detalhe",
        component: ProdutoDetalheComponent
-      }
+      },
+      {
+        path:"menu",
+        component: MenuComponent
+       }
+      
     ]),
     
   ],
