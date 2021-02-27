@@ -1,8 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 .menu{
-    margin:60px;   
+     position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-html, body { background-color: rgba(10, 30, 0, 20); }
+
+/* body { background-color: rgba(10, 30, 0, 20); } */
+.menu { background-color: rgba(10, 30, 0, 20); }
+
 
 .menu_links{
 
